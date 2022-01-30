@@ -1,4 +1,4 @@
-document.title = "My Timetable"
+document.title = "My School Timetable"
 Timetable = {}
 Timetable.day = {}
 Timetable.Weekday = new Date().getDay()
@@ -13,16 +13,16 @@ Timetable.SetTimetable=function ()
 {
 	if (Timetable.Weekday >= 1 && Timetable.Weekday <= 5) {
 		document.getElementById("error").innerHTML = ""
-		document.getElementById("weekday").innerHTML = Timetable.day[DayNumber].Day
-		document.getElementById("homegroup").innerHTML = Timetable.day[DayNumber].Homegroup
-		document.getElementById("session1").innerHTML = Timetable.day[DayNumber].Session1
-		document.getElementById("session2").innerHTML = Timetable.day[DayNumber].Session2
-		document.getElementById("recess").innerHTML = Timetable.day[DayNumber].Recess
-		document.getElementById("session3").innerHTML = Timetable.day[DayNumber].Session3
-		document.getElementById("session4").innerHTML = Timetable.day[DayNumber].Session4
-		document.getElementById("lunch").innerHTML = Timetable.day[DayNumber].Lunch
-		document.getElementById("session5").innerHTML = Timetable.day[DayNumber].Session5
-		document.getElementById("session6").innerHTML = Timetable.day[DayNumber].Session6
+		document.getElementById("weekday").innerHTML = Timetable.day[Timetable.Weekday].Day
+		document.getElementById("homegroup").innerHTML = Timetable.day[Timetable.Weekday].Homegroup
+		document.getElementById("session1").innerHTML = Timetable.day[Timetable.Weekday].Session1
+		document.getElementById("session2").innerHTML = Timetable.day[Timetable.Weekday].Session2
+		document.getElementById("recess").innerHTML = Timetable.day[Timetable.Weekday].Recess
+		document.getElementById("session3").innerHTML = Timetable.day[Timetable.Weekday].Session3
+		document.getElementById("session4").innerHTML = Timetable.day[Timetable.Weekday].Session4
+		document.getElementById("lunch").innerHTML = Timetable.day[Timetable.Weekday].Lunch
+		document.getElementById("session5").innerHTML = Timetable.day[Timetable.Weekday].Session5
+		document.getElementById("session6").innerHTML = Timetable.day[Timetable.Weekday].Session6
 	} else {
 		document.getElementById("error").innerHTML = "Sorry, This Only Works On School Days"
 	}
