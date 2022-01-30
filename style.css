@@ -1,0 +1,17 @@
+﻿.page {
+	color: #ffffff;
+	background-color: #0a0e7e;
+	text-shadow: 2px 2px 2px black;
+}
+.dayofweek {
+	color: #89ff00
+}
+.dayofweekHL {
+	background-color: #FFFF00
+}
+.sessions {
+	background-color: #000000
+}
+.error {
+	background-color: #f44336
+}
