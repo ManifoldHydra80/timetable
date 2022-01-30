@@ -1,3 +1,4 @@
+document.title = "My Timetable"
 Timetable = {}
 Timetable.day = {}
 Timetable.Weekday = new Date().getDay()
